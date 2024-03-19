@@ -1,0 +1,49 @@
+// Create Event
+POST http://localhost:8080/events
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQGhvdG1haWwuY29tIiwiZXhwIjoxNzEwOTIyMDM3LCJ1c2VySWQiOjV9.hVHAn8bKCGmbcM75HCs2u2VxGtfesxhw93fxnvM3ZZk
+
+{
+    "name": "Lalala Event",
+    "description": "Hello",
+    "location" : "Chalala",
+    "dateTime": "2025-01-01T16:30:00.000Z"
+}
+###
+// Get All events
+GET http://localhost:8080/events
+Content-Type: application/json
+
+{}
+
+###
+// Get Event By ID
+GET http://localhost:8080/events/2
+Content-Type: application/json
+
+{}
+
+###
+//Delete
+DELETE http://localhost:8080/events/9
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQGhvdG1haWwuY29tIiwiZXhwIjoxNzEwOTIyMjExLCJ1c2VySWQiOjV9.jhu6nrNcVDljKBwnckPwI4Y1EolOIzMoolrl85k0Y5k
+
+{}
+
+###
+//Update
+PUT http://localhost:8080/events/1
+Content-Type: application/json
+
+{
+    "name": "Updated Name",
+    "description": "Update Test event(2)",
+    "location" : "New Location",
+    "dateTime": "2025-01-01T16:30:00.000Z"
+}
+
+###
+// Register Event
+POST http://localhost:8080/events/10/register
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQGhvdG1haWwuY29tIiwiZXhwIjoxNzEwOTI0MzA1LCJ1c2VySWQiOjV9.cwhTQwh9l0oavmnimboxeSbtzb1q0JrHHHklGM3tI04
